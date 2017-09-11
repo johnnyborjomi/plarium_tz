@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <div class="container">
         <section id="main">
-            <div class="header">
-                <div class="logo">Softgray</div>
-                <ul class="menu">
-                    <li><a href="#main">Products</a></li>
-                    <li><a href="#main">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="phone">+81-00-0000-0000</div>
+            <div class="header-container">
+                <div class="header">
+                    <div class="logo"><a href="#">Softgray</a></div>
+                    <div wrap-menu>
+                        <ul class="menu">
+                            <li><a href="#main">Products</a></li>
+                            <li><a href="#main">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="phone">+81-00-0000-0000</div>
+                    </div>
+                </div>
             </div>
             <div class="jumbotron">
                 <h1>Creative Solutions</h1>
@@ -29,58 +32,156 @@
                     Duis at facilisis metus. Sed id erat tortor.<br>
                     Curabitur tristique quam tellus, nec sodales lectus pellentesque in.</p>
             </div>
-            <div class="services">
-                <article>
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="111px" height="111px">
-                        <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
-                              d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
-                    </svg>
-                    <h4>Consulting</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
-                </article>
-                <article>
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="111px" height="111px">
-                        <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
-                              d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
-                    </svg>
-                    <h4>Developing</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
-                </article>
-                <article>
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="111px" height="111px">
-                        <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
-                              d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
-                    </svg>
-                    <h4>Designing</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
-                </article>
-                <article>
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="111px" height="111px">
-                        <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
-                              d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
-                    </svg>
-                    <h4>Analysis</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
-                </article>
+            <div class="services-container">
+                <div class="services">
+                    <article>
+                        <div class="svg-container icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="111px" height="111px">
+                                <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
+                                      d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
+                            </svg>
+                        </div>
+                        <h4>Consulting</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
+                    </article>
+                    <article>
+                        <div class="svg-container icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="111px" height="111px">
+                                <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
+                                      d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
+                            </svg>
+                        </div>
+                        <h4>Developing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
+                    </article>
+                    <article>
+                        <div class="svg-container icon-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="111px" height="111px">
+                                <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
+                                      d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
+                            </svg>
+                        </div>
+                        <h4>Designing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
+                    </article>
+                    <article>
+                        <div class="svg-container icon-4">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="111px" height="111px">
+                                <path fill-rule="evenodd"  fill="rgb(52, 152, 219)"
+                                      d="M55.928,0.510 C86.303,0.510 110.927,25.134 110.927,55.510 C110.927,85.885 86.303,110.509 55.928,110.509 C25.552,110.509 0.928,85.885 0.928,55.510 C0.928,25.134 25.552,0.510 55.928,0.510 Z"/>
+                            </svg>
+                        </div>
+                        <h4>Analysis</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. Curabitur tristique quam tellus, nec sodales lectus pellentesque </p>
+                    </article>
+                </div>
             </div>
         </section>
         <section id="about">
-
+            <div class="preview-container">
+                <article class="preview">
+                    <div class="preview-wrap">
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
+                        <h2>Lorem ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor. </p>
+                        <button>View more</button>
+                    </div>
+                    <img src="images/macbook.png">
+                </article>
+            </div>
+            <div class="tools-container">
+                <article class="tools">
+                    <div class="tool">
+                        <h6>MAGAZINE PUBLISHING TOOL</h6>
+                        <h3>THE NEWS</h3>
+                    </div>
+                    <div class="tool">
+                        <h6>DIGITAL BOOK PUBLISHING TOOL</h6>
+                        <h3>LIBRO</h3>
+                    </div>
+                    <div class="tool elite">
+                        <h6>FONT EDITOR</h6>
+                        <h3>ELITE</h3>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section></section>
-    </div>
+        <section id="news">
+            <div class="news-container">
+                <div class="news-block">
+                    <article>
+                        <div class="news-wrap">
+                            <h4>LATEST NEWS</h4>
+                            <a href="#">SEE ALL NEWS</a></div>
+                        <div class="news-image image-1"></div>
+                        <div class="news-content">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.<a href="#">   ... READ MORE</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-wrap">
+                            <h4>RELEASE</h4>
+                            <a href="#">SEE ALL RELEASES</a></div>
+                        <div class="news-image image-2"></div>
+                        <div class="news-content">
+                            <h6>consectetur adipiscing elit</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.<a href="#">   ... READ MORE</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-wrap">
+                            <h4>JOBS</h4>
+                        </div>
+                        <div class="news-image image-3"></div>
+                        <div class="news-content">
+                            <h6>Vestibulum at orci nulla.</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.<a href="#">   ... READ MORE</a></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <footer>
+                <div class="contact">
+                    <h4>SOFTGRAY Inc.</h4>
+                    <p>1600 Amphitheatre Parkway<br>
+                        Mountain View<br>
+                        CA 94043<br>
+                        00-000-0000<br>
+                        sunrise@sunrise.io
+                        <span>copyright©2014 SUNRISE Inc.</span></p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li>PRODUCTS</li>
+                        <li>SERVICES</li>
+                        <li>ABOUT</li>
+                        <li>JOBS</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+                <div class="subscribe-block">
+                    <label for="subscribe">Newsletter
+                        <input type="text" id="subscribe">
+                        <button>Subscribes</button>
+                    </label>
+                    <div class="follow-block">Follow us
+                        <div class="social-1"></div>
+                        <div class="social-2"></div>
+                        <div class="social-3"></div>
+                        <div class="social-4"></div>
+                    </div>
+                </div>
+            </footer>
+        </section>
 </body>
 </html>
 

@@ -1,6 +1,6 @@
 section{
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
     background: #eee;
     display: flex;
     flex-direction: column;
@@ -8,9 +8,16 @@ section{
 section:nth-child(2n){
     background: #e5e5e5;
 }
-.header{
-    align-items: center;
+.header-container{
+    width: 100vw;
+    height: 53px;
     background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    width: 1170px;
+    align-items: center;
     color:#313131;
     display: flex;
     justify-content: space-between;
@@ -27,6 +34,8 @@ section:nth-child(2n){
 .jumbotron h1{
     font-size:56px;
     font-weight:900;
+    padding:60px 0;
+
 }
 .jumbotron p{
     font-weight: 300;
@@ -41,7 +50,7 @@ section:nth-child(2n){
 
 }
 ul.menu{
-
+    display: inline-block;
 }
 ul.menu li{
     font-size: 14px;
@@ -49,19 +58,25 @@ ul.menu li{
     text-transform: uppercase;
 }
 ul.menu a{
-    padding: 13px;
+    padding:17px 13px;
 }
 ul.menu a:hover{
     background: #484848;
     color:#fff;
 }
-.number{
+.phone{
+    display: inline-block;
+    margin-left: 35px;
     font-size: 16px;
     font-weight: 900;
 }
-.services{
+.services-container{
     display: flex;
-
+    justify-content: center;
+}
+.services{
+    width: 1170px;
+    display: flex;
 }
 .services h4{
     color:#3498db;
@@ -74,3 +89,192 @@ ul.menu a:hover{
     align-items: center;
     padding:5% 0 0 0;
 }
+.svg-container{
+    position: relative;
+}
+.svg-container::after{
+    content: '';
+    background: url("images/sprites(services).png") no-repeat 0 0;
+    background-size: 240px;
+    top:25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+#about{
+    justify-content: space-around;
+}
+.preview-container{
+    display: flex;
+    justify-content: center;
+}
+#about article{
+    width: 1172px;
+    display: flex;
+    justify-content:space-between;
+}
+.preview h6{
+    font-size:14px;
+    font-weight:300;
+}
+.preview h2{
+    text-transform: uppercase;
+    font-size:42px;
+    font-weight:900;
+}
+.preview p{
+    font-size:18px;
+    font-weight:300;
+}
+.preview-wrap{
+    max-width:476px;
+}
+.tools-container{
+    display: flex;
+    justify-content: center;
+}
+
+.tool{
+    background: #fff;
+    width:calc(100%/3);
+    height:280px;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.tool.elite{
+    background: #000;
+    color:#fff;
+}
+.tool h3,.tool h6{
+    font-weight: 900;
+    text-align: center;
+}
+.tool h6{
+    font-size:12px;
+}
+.tool h3{
+    font-size: 32px;
+}
+#about button{
+    width: 270px;
+    height: 50px;
+    background: #fff;
+    font-size:16px;
+    font-weight:600;
+    text-transform: uppercase;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+#about button:hover{
+    color:#fff;
+    background: #000;
+}
+.news-container{
+    display: flex;
+    justify-content: center;
+}
+.news-block{
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.news-image{
+    margin-top: 25px;
+    width:372px;
+    height: 140px;
+    background: #5c5c5c;
+    position: relative;
+}
+.image-1::after,.image-2::after{
+    content: "October 30, 2014";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 135px;
+    height: 25px;
+    background: #888;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    line-height:25px;
+}
+.news-content{
+    background: #fff;
+    width:372px;
+}
+.news-wrap h4,.news-wrap a{
+    display: inline-block;
+}
+.news-wrap{
+    padding-bottom:15px;
+    position: relative;
+}
+.news-wrap::after{
+    content: '';
+    height: 5px;
+    width: 70px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.news-wrap h4{
+    font-size: 18px;
+    font-weight: 900;
+    padding-right: 18px;
+}
+.news-wrap a{
+    font-size: 12px;
+    font-weight: 600;
+    color:#626262;
+    border-left: 2px solid #fff;
+    padding-left:8px;
+}
+.news-wrap a:hover{
+    color:#3498db;
+}
+.news-content{
+    padding: 26px 20px;
+    box-sizing: border-box;
+}
+.news-content h6{
+    color:#3498db;
+    font-size: 18px;
+    font-weight:900;
+    margin-bottom: 10px;
+}
+.news-content p{
+    color:#313131;
+    font-size: 14px;
+    text-align: justify;
+    line-height:22px;
+}
+.news-content a:hover{
+    color:#3498db;
+}
+#news{
+    position: relative;
+}
+footer{
+    width: 100vw;
+    height: 40vh;
+    background: #c9c9c9;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
