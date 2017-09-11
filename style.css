@@ -49,18 +49,18 @@ section:nth-child(2n){
     text-transform: uppercase;
 
 }
-ul.menu{
+.header ul.menu{
     display: inline-block;
 }
-ul.menu li{
+.header ul.menu li{
     font-size: 14px;
     display: inline-block;
     text-transform: uppercase;
 }
-ul.menu a{
+.header ul.menu a{
     padding:17px 13px;
 }
-ul.menu a:hover{
+.header ul.menu a:hover{
     background: #484848;
     color:#fff;
 }
@@ -77,17 +77,29 @@ ul.menu a:hover{
 .services{
     width: 1170px;
     display: flex;
+    justify-content: space-between;
+    padding:5% 0 0 0;
 }
 .services h4{
     color:#3498db;
     font-size:21px;
     font-weight: 900;
+    margin-top: 20px;
+}
+.services p{
+    text-align: justify;
+    margin-top: 30px;
+    color: #313131;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
 }
 .services article{
     display:flex;
     flex-direction:column;
     align-items: center;
-    padding:5% 0 0 0;
+
+    width:270px;
 }
 .svg-container{
     position: relative;
@@ -122,10 +134,12 @@ ul.menu a:hover{
     text-transform: uppercase;
     font-size:42px;
     font-weight:900;
+    margin-top: 45px;
 }
 .preview p{
     font-size:18px;
     font-weight:300;
+    margin: 45px 0 30px 0;
 }
 .preview-wrap{
     max-width:476px;
@@ -266,15 +280,76 @@ footer{
     position: absolute;
     bottom: 0;
     display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
+.footer-container{
+    margin-top: 63px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-block-1{
+    width: 374px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contact p{
+    font-size: 14px;
+    color:#626262;
+}
+.contact p span{
+    display: block;
+    margin-top: 25px;
+}
+.footer-menu{
+    font-size: 14px;
+    color: #626262;
+}
+.footer-menu li{
+    padding-bottom: 18px;
+}
+.footer-menu li a:hover{
+    color: #fff;
+}
+.subscribe-block label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:600;
+    margin-bottom: 12px;
+}
+.subscribe-block input{
+    border:none;
+    padding: 0;
+    height: 30px;
+    width:272px;
+    margin-right: 8px;
+}
+.subscribe-block button{
+    height: 30px;
+    width: 90px;
+    background: #626262;
+    color:#fff;
+    text-transform: uppercase;
+}
+.subscribe-block button:hover{
+    background: #3498DB;
+}
+.follow-block span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:600;
+    margin: 37px 0 14px 0;
+    display: block;
+}
+.social{
+    width: 30px;
+    height:30px;
+    background: #fff;
+    display: inline-block;
+}
 
