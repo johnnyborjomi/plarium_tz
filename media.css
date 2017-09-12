@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1200px){
+    .services .container,.news-block{
+       justify-content: space-around;
+    }
+    .preview{
+        justify-content: center;
+    }
+    .preview-wrap>*{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
