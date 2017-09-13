@@ -10,7 +10,14 @@ html {
 body{
     margin: 0;
     padding: 0;
-    font-family: "Lato";
+    font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
 }
 ul{
     list-style: none;
@@ -27,4 +34,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 button{
     border-style: none;
+}
+img{
+    max-width: 100%;
 }
