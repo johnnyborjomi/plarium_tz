@@ -333,7 +333,6 @@
     margin:6px 8px 6px 0;
 }
 .footer-block-2 button{
-    font-size: 12px;
     height: 30px;
     width: 90px;
     background: #626262;
@@ -344,8 +343,12 @@
 .footer-block-2 button:hover{
     background: #3498DB;
 }
-.subscribe-block{
+#subscribe-block{
     margin-bottom: 35px;
+}
+#subscribe-block form{
+    font-size: 12px;
+    position: relative;
 }
 .follow-block span{
     text-transform: uppercase;
@@ -357,7 +360,24 @@
     margin-top: 10px;
 }
 .social div{
-
     display: inline-block;
 }
-
+.email-alert{
+    display: block;
+    position: absolute;;
+}
+.red{
+    color:red;
+}
+.green{
+    color:green;
+}
+button:disabled{
+    opacity: 0.2;
+}
+.subscribe-done{
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    width:362px;
+}

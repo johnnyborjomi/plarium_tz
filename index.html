@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="media.css">
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="index.jsx" type="text/babel"></script>
 </head>
 <body>
             <div class="container">
@@ -163,12 +167,12 @@
                         </ul>
                     </div>
                     <div class="footer-block-2">
-                        <div class="subscribe-block">
-                            <form action="" name="subscribe">
+                        <div id="subscribe-block">
+                            <!--<form action="" name="subscribe">
                                 <label for="subscribe">Newsletter</label>
-                                <input type="text" id="subscribe">
+                                <input type="email" id="subscribe">
                                 <button>Subscribes</button>
-                            </form>
+                            </form>-->
                         </div>
                         <div class="follow-block">
                             <span>Follow us</span>
@@ -183,6 +187,8 @@
                     </div>
                 </div>
             </footer>
+
+
 </body>
 </html>
 
