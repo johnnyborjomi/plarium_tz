@@ -9,7 +9,7 @@ class SubscribtionForm extends React.Component {
 
         const basicEmail = '';
 
-        this.state = {isSubscribed:false, email:basicEmail, isValid:this.emailCheck(basicEmail)}
+        this.state = {isSubscribed:false, email:basicEmail, isValid:this.emailCheck(basicEmail)};
 
     }
 
@@ -20,15 +20,15 @@ class SubscribtionForm extends React.Component {
 
     emailChange(event) {
 
-        this.setState({email: event.target.value})
-        this.setState({isValid: this.emailCheck(this.state.email)});
+        this.setState({email: event.target.value, isValid: this.emailCheck(this.state.email)})
 
     }
 
     showAlertSpan(){
           if(this.state.email != '') {
-              return <span
-                  className={this.state.isValid ? 'email-alert green' : 'email-alert red'}>{this.state.isValid ? 'email is valid' : 'email is not valid'}</span>
+              return <span className={this.state.isValid ? 'email-alert green' : 'email-alert red'}>
+                  {this.state.isValid ? 'email is valid' : 'email is not valid'}
+                  </span>
           }
     }
 
@@ -65,5 +65,5 @@ class SubscribtionForm extends React.Component {
 
 ReactDOM.render(
     <SubscribtionForm />,
-    document.getElementById('subscribe-block')
+    document.querySelector('.subscribe-block')
 );

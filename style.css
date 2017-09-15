@@ -343,10 +343,10 @@
 .footer-block-2 button:hover{
     background: #3498DB;
 }
-#subscribe-block{
+.subscribe-block{
     margin-bottom: 35px;
 }
-#subscribe-block form{
+.subscribe-block form{
     font-size: 12px;
     position: relative;
 }
