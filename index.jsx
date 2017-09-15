@@ -33,8 +33,8 @@ class SubscribtionForm extends React.Component {
     }
 
     emailCheck(email){
-
-       return email.length > 5;
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
 
     }
 
@@ -43,7 +43,7 @@ class SubscribtionForm extends React.Component {
             return(
             <form>
                 <label>Newsletter</label>
-                <span className="subscribe-done">You've subscribed!!</span>
+                <span className="subscribe-done">Thanks for subscribe!! Check your email!!</span>
             </form>
             )
 

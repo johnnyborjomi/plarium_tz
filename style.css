@@ -379,5 +379,8 @@ button:disabled{
     text-transform: uppercase;
     font-size: 14px;
     display: block;
-    width:362px;
+    width:372px;
+    height: 42px;
+    line-height: 36px;
+    margin-bottom: 30px;
 }
