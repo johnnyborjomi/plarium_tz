@@ -27,16 +27,38 @@
     .logo,.wrap-menu{text-align: center}
 
 }
-@media only screen and (max-width: 375px){
-    .container{
+@media only screen and (max-width: 420px) {
+    .header{
+        position: relative;
+    }
+    .header .menu{
+        display: none;
+    }
+    .header .menu li{
+        display: block;
+        padding: 0;
+    }
+    .header .menu a{
+        display: block;
+    }
+    .burger{
+        display: block;}
+}
+@media only screen and (max-width: 376px) {
+    .container {
         padding: 0 10px;
     }
-    .tool{
+
+    .tool {
         min-width: 300px;
     }
-    .news-image{
+
+    .news-image {
         width: auto;
         height: auto;
     }
-    .news-content{width: auto}
+
+    .news-content {
+        width: auto
+    }
 }

@@ -37,19 +37,19 @@
     text-transform: uppercase;
     padding:15px 0;
 }
-.header ul.menu{
+.header .menu{
     display: inline-block;
 }
-.header ul.menu li{
+.header .menu li{
     font-size: 14px;
     padding: 25px 3px;
     display: inline-block;
     text-transform: uppercase;
 }
-.header ul.menu a{
+.header .menu a{
     padding:25px 13px;
 }
-.header ul.menu a:hover{
+.header .menu a:hover{
     background: #484848;
     color:#fff;
 }
@@ -383,4 +383,18 @@ button:disabled{
     height: 42px;
     line-height: 36px;
     margin-bottom: 30px;
+}
+.burger{
+    width: 30px;
+    height: 30px;
+    background: url("images/if_menu-alt_134216.svg") no-repeat;
+    position: absolute;
+    top:15px;
+    right: 15px;
+    display: none;
+}
+
+.close-icon{
+    background: url("images/close-icon.svg") no-repeat;
+    background-size: 30px 30px;
 }
